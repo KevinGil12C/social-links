@@ -1,0 +1,98 @@
+:root {
+    /*Primary*/
+    --green: hsl(75, 94%, 57%);
+
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    --transition: 0.2s, background-color 0.2s ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+}
+
+.body{
+     color: var(--white);
+}
+.container {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--off-black);
+}
+
+.social--links {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    border-radius: 15px;
+    background: var(--dark-grey);
+    padding: 30px;
+    width: 20rem;
+    height: 27rem;
+    max-width: 700px;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cabecera img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.titulo{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.location{
+    color: var(--green);
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.job--title{
+    color: var(--white);
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.button--group{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;  
+    
+}
+
+button{
+   background-color: var(--grey);
+   border: none;
+   padding: 0.6rem 0.8rem;
+   margin-bottom: 0.6rem;
+   font-size: 0.8rem;
+   font-weight: bold;
+   border-radius: 0.4rem;
+}
+
+button:hover{
+    background-color: var(--green);
+    color: var(--grey);
+    transition: var(--transition);
+    cursor: pointer;
+}
